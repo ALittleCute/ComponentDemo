@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.github.mzule.activityrouter.annotation.Router;
+
+@Router("authentication")
 public class AuthenticationActivity extends AppCompatActivity {
 
     @Override
