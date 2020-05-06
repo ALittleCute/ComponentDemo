@@ -1,0 +1,2 @@
+include ':app', ':module_news', ':common'
+rootProject.name='ComponentDemo'

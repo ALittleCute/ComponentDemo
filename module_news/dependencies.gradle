@@ -1,0 +1,9 @@
+dependencies {
+    api fileTree(dir: 'libs', includes: ['*.jar'])
+
+    api project(path:':common')
+
+    Map<String, String> dependencies = rootProject.ext.dependencies
+
+    annotationProcessor  dependencies.routerApt
+}

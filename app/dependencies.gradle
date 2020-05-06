@@ -1,0 +1,10 @@
+dependencies {
+    api fileTree(dir: 'libs', includes: ['*.jar'])
+
+    if (! isModule.toBoolean()){
+        api project(path:':module_news')
+    }
+    Map<String, String> dependencies = rootProject.ext.dependencies
+
+    annotationProcessor  dependencies.routerApt
+}

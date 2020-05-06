@@ -1,0 +1,10 @@
+dependencies {
+    api fileTree(dir: 'libs', includes: ['*.jar'])
+
+    Map<String, String> dependencies = rootProject.ext.dependencies
+
+    api dependencies.router
+
+    api dependencies.appcompat
+    api dependencies.constraintlayout
+}
